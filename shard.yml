@@ -1,0 +1,9 @@
+name: clamp
+version: 0.1.0
+
+authors:
+  - John Jansen <john.jansen@me.com>
+
+crystal: 0.23.0
+
+license: MIT
