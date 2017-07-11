@@ -3,6 +3,16 @@
 [![GitHub version](https://badge.fury.io/gh/johnjansen%2Fclamp.svg)](http://badge.fury.io/gh/johnjansen%2Fclamp)
 [![CI](https://travis-ci.org/johnjansen/clamp.svg?branch=master)](https://travis-ci.org/johnjansen/clamp)
 
+implements `#clamp` on any `Comparable`
+
+```
+  'a'.clamp('b', 'c') # => 'b'
+  'b'.clamp('a', 'c') # => 'b'
+  'd'.clamp('a', 'c') # => 'c'
+  
+  ...
+```
+
 ## Installation
 
 Add this to your application's `shard.yml`:
