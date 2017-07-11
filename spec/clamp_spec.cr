@@ -34,4 +34,20 @@ describe Clamp do
       "b".clamp("a", "c").should eq "b"
     end
   end
+
+  describe "Number" do
+    it "lower" do
+      1.clamp(2, 3).should eq 2
+      2.clamp(2, 3).should eq 2
+    end
+
+    it "upper" do
+      4.clamp(2, 3).should eq 3
+      3.clamp(2, 3).should eq 3
+    end
+
+    it "within" do
+      2.clamp(1, 3).should eq 2
+    end
+  end
 end
